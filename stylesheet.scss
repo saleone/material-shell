@@ -1,6 +1,6 @@
 $color-primary: #3f51b5;
 $ripple: rgba(255, 255, 255, 0.12);
-$shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+$shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
 $panel-size: 48px;
 
 @mixin foreground($theme, $opacity) {
@@ -202,77 +202,6 @@ $panel-size: 48px;
             &:focus,
             &:checked {
                 box-shadow: inset 3px 0 0px $color-primary;
-            }
-        }
-    }
-
-    #topBarSpacer {
-        height: $panel-size;
-    }
-
-    #topPanel {
-        $topPanelTheme: $theme;
-        @if ($theme == 'primary') {
-            $topPanelTheme: 'light';
-        }
-        @include background($topPanelTheme);
-        height: $panel-size;
-        box-shadow: $shadow;
-        .task-active-indicator {
-            @if ($topPanelTheme == 'dark') {
-                @include background('light');
-            } @else {
-                @include background('primary');
-            }
-            height: 2px;
-        }
-        .task-bar-item {
-            font-size: 14px;
-            height: $panel-size;
-            &.active {
-                .task-bar-item-content {
-                    .task-bar-item-title {
-                        @if ($topPanelTheme == 'light') {
-                            color: $color-primary;
-                        } @else {
-                            @include foreground-high-emphasis($topPanelTheme);
-                        }
-                    }
-                }
-            }
-            .task-bar-item-content {
-                padding: 0px 8px;
-                .app-icon {
-                    icon-size: 24px;
-                    margin-right: 8px;
-                }
-                .task-bar-item-title {
-                    max-width: 248px;
-                    margin-right: 8px;
-                    font-weight: 600;
-                    font-size: 14px;
-                    @include foreground-medium-emphasis($topPanelTheme);
-                }
-                .task-close-button {
-                    border-radius: 20px;
-                    width: 24px;
-                    height: 20px;
-                    .task-close-icon {
-                        icon-size: 18px;
-                        @include foreground-medium-emphasis($topPanelTheme);
-                    }
-                }
-            }
-        }
-        .mat-panel-button {
-            .mat-panel-button-icon {
-                @include foreground-medium-emphasis($topPanelTheme);
-            }
-            &.active {
-                @include active($topPanelTheme);
-                .mat-panel-button-icon {
-                    @include foreground-high-emphasis($topPanelTheme);
-                }
             }
         }
     }

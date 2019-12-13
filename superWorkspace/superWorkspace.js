@@ -67,7 +67,7 @@ var SuperWorkspace = class SuperWorkspace {
             height: monitor.height,
             // This St.Bin fix an Incredible Bug which the source is Unknown that make the AppCard to fill his parent when clicking on app icon SOMETIMES.
             // Since the St.Bin take the size of the AppCard the bug is invisible...
-            children: [new St.Bin({ child: this.categorizedAppCard })]
+            children: [] // [new St.Bin({ child: this.categorizedAppCard })]
         });
 
         this.backgroundContainer.add_child(this.backgroundStackLayout);

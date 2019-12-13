@@ -1,63 +1,63 @@
 <schemalist>
   <schema id="org.gnome.shell.extensions.materialshell.bindings" path="/org/gnome/shell/extensions/materialshell/bindings/">
     <key name="previous-window" type="as">
-      <default><![CDATA[['<Super>a']]]></default>
+      <default><![CDATA[['<Super>k']]]></default>
       <summary>Focus previous window</summary>
       <description>
         Focus the previous window of the current workspace
       </description>
     </key>
     <key name="next-window" type="as">
-      <default><![CDATA[['<Super>d']]]></default>
+      <default><![CDATA[['<Super>j']]]></default>
       <summary>Focus next window</summary>
       <description>
         Focus the next window of the current workspace
       </description>
     </key>
     <key name="previous-workspace" type="as">
-      <default><![CDATA[['<Super>w']]]></default>
+      <default><![CDATA[['<Super>n']]]></default>
       <summary>Focus previous workspace</summary>
       <description>
         Focus the previous  workspace
       </description>
     </key>
     <key name="next-workspace" type="as">
-      <default><![CDATA[['<Super>s']]]></default>
+      <default><![CDATA[['<Super>m']]]></default>
       <summary>Focus next workspace</summary>
       <description>
-        Focus the next workspace 
+        Focus the next workspace
       </description>
     </key>
     <key name="kill-focused-window" type="as">
       <default><![CDATA[['<Super>q']]]></default>
       <summary>Kill the current window</summary>
       <description>
-        Kill the current focused window 
+        Kill the current focused window
       </description>
     </key>
     <key name="move-window-left" type="as">
-      <default><![CDATA[['<Shift><Super>a']]]></default>
+      <default><![CDATA[['<Shift><Super>k']]]></default>
       <summary>Move the current window to the left</summary>
       <description>
         Move the current window to the left
       </description>
     </key>
     <key name="move-window-right" type="as">
-      <default><![CDATA[['<Shift><Super>d']]]></default>
+      <default><![CDATA[['<Shift><Super>j']]]></default>
       <summary>Move the current window to the right</summary>
       <description>
-        Move the current window to the right 
+        Move the current window to the right
       </description>
     </key>
     <key name="move-window-top" type="as">
-      <default><![CDATA[['<Shift><Super>w']]]></default>
+      <default><![CDATA[['<Shift><Super>n']]]></default>
       <summary>Move the current window to upper workspace</summary>
       <description>
         Move the current window to upper workspace
       </description>
     </key>
     <key name="move-window-bottom" type="as">
-      <default><![CDATA[['<Shift><Super>s']]]></default>
+      <default><![CDATA[['<Shift><Super>m']]]></default>
       <summary>Move the current window to lower workspace</summary>
       <description>
         Move the current window to lower workspace
